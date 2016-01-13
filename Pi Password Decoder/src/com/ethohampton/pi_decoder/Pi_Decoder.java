@@ -21,7 +21,7 @@ public class Pi_Decoder {
 		for (int i = 0; i < 8/*piNumbers.length*/; i++) {
 			int v = piNumbers[i];
 			
-			while(v>24){
+			while(v>24){//TODO implement a feature that evenly distributes values
 				v=v/2;
 			}
 			Alphabet.findLetter(v);
