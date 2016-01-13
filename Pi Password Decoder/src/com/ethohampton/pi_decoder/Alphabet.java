@@ -27,62 +27,64 @@ public class Alphabet {
 	static int x = 24;
 	static int y = 25;
 	static int z = 26;
+	
+	public static String letter;
 
-	public static String findLetter(int num) {
+	public static void findLetter(int num) {
 		if (num == a) {
-			return "a";
+			letter = "a";
 		} else if (num == b) {
-			return "b";
+			letter = "b";
 		} else if (num == c) {
-			return "c";
+			letter = "c";
 		} else if (num == d) {
-			return "d";
+			letter = "d";
 		} else if (num == e) {
-			return "e";
+			letter = "e";
 		} else if (num == f) {
-			return "f";
+			letter = "f";
 		} else if (num == g) {
-			return "g";
+			letter = "g";
 		} else if (num == h) {
-			return "h";
+			letter = "h";
 		} else if (num == i) {
-			return "i";
+			letter = "i";
 		} else if (num == j) {
-			return "j";
+			letter = "j";
 		} else if (num == k) {
-			return "k";
+			letter = "k";
 		} else if (num == l) {
-			return "l";
+			letter = "l";
 		} else if (num == m) {
-			return "m";
+			letter = "m";
 		} else if (num == n) {
-			return "n";
+			letter = "n";
 		} else if (num == o) {
-			return "o";
+			letter = "o";
 		} else if (num == p) {
-			return "p";
+			letter = "p";
 		} else if (num == q) {
-			return "q";
+			letter = "q";
 		} else if (num == r) {
-			return "r";
+			letter = "r";
 		} else if (num == s) {
-			return "s";
+			letter = "s";
 		} else if (num == t) {
-			return "t";
+			letter = "t";
 		} else if (num == u) {
-			return "u";
+			letter = "u";
 		} else if (num == v) {
-			return "v";
+			letter = "v";
 		} else if (num == w) {
-			return "w";
+			letter = "w";
 		} else if (num == x) {
-			return "x";
+			letter = "x";
 		} else if (num == y) {
-			return "y";
+			letter = "y";
 		} else if (num == z) {
-			return "z";
+			letter = "z";
 		} else {
-			return null;
+			return;
 		}
 
 	}

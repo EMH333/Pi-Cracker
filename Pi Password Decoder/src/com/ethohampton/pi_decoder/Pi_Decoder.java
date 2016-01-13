@@ -2,8 +2,8 @@ package com.ethohampton.pi_decoder;
 
 public class Pi_Decoder {
 
-	public String passwordToFind;
-	public static String answer = "test";
+	public String passwordToFind = "sfjdkl";
+	public static String answer = "";
 	public long trysToFindPass;
 	public static String[] piInString;
 	public static int[] piNumbers;
@@ -12,21 +12,24 @@ public class Pi_Decoder {
 	public static void main(String[] args) {
 
 		piInString = Pi.Pi.split(",");
-		piNumbers = new int[1024];
+		piNumbers = new int[piInString.length];
 		for (int i = 0; i < piInString.length; i++) {
 			piNumbers[i] = Integer.parseInt(piInString[i]);
 
 		}
 
-		for (int i = 0; i < piNumbers.length; i++) {
-			String str = null;
+		for (int i = 0; i < 8/*piNumbers.length*/; i++) {
 			int v = piNumbers[i];
 			
-			str = Alphabet.findLetter(v);
+			while(v>24){
+				v=v/2;
+			}
+			Alphabet.findLetter(v);
+			System.out.println(Alphabet.letter);
+				answer = answer + Alphabet.letter;
 			
-			
-			answer.concat(str);
 		}
+		System.out.println(answer);
 
 	}
 }
