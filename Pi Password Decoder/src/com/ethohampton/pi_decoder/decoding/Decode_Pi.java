@@ -4,25 +4,23 @@ import com.ethohampton.pi_decoder.Alphabet;
 import com.ethohampton.pi_decoder.Pi_Decoder;
 
 public class Decode_Pi {
-	public static String passwordToFind = "tnnp";
+	public static String passwordToFind = "sdkf";
 	public static String answer = "";
 	public static int[] numbers = Pi_Decoder.piNumbers;
-	public static int runs = Pi_Decoder.runs;
-	
+	public static int runs;
+
 	private static String aLetter;
 	private static String bLetter;
 	private static String cLetter;
 	private static String dLetter;
-	
 
-	private static int scale(int v){
+	private static int scale(int v) {
 		while (v > 24) {
 			v = v / 2;
 		}
 		return v;
 	}
-	
-	
+
 	public static String decode() {
 		/*
 		 * for (int i = 0; i < 8 piNumbers.length ; i++) { int v = piNumbers[i];
@@ -34,8 +32,9 @@ public class Decode_Pi {
 		 * 
 		 * } System.out.println(answer);
 		 */
-
+		runs = numbers.length;
 		for (int a = 0; a < runs; a++) {
+			System.out.println("Current run: " + a);
 			aLetter = Alphabet.findLetter(scale(numbers[a]));
 			for (int b = 0; b < runs; b++) {
 				bLetter = Alphabet.findLetter(scale(numbers[b]));
@@ -43,10 +42,10 @@ public class Decode_Pi {
 					cLetter = Alphabet.findLetter(scale(numbers[c]));
 					for (int d = 0; d < runs; d++) {
 						dLetter = Alphabet.findLetter(scale(numbers[d]));
-						
+
 						answer = aLetter + bLetter + cLetter + dLetter;
-						//System.out.println(answer);
-						if(answer.equals(passwordToFind)){
+						// System.out.println(answer);
+						if (answer.equals(passwordToFind)) {
 							return "The password is: " + answer;
 						}
 
