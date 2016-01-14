@@ -4,7 +4,7 @@ import com.ethohampton.pi_decoder.Alphabet;
 import com.ethohampton.pi_decoder.Pi_Decoder;
 
 public class Decode_Pi {
-	public static String passwordToFind = "bbbb";
+	public static String passwordToFind = "";
 	public static String answer = "";
 	public static int[] numbers = Pi_Decoder.piNumbers;
 	public static int runs;
@@ -33,6 +33,7 @@ public class Decode_Pi {
 		 * } System.out.println(answer);
 		 */
 		runs = numbers.length;
+		System.out.println("Trying to find: " + passwordToFind);
 		for (int a = 0; a < runs; a++) {
 			System.out.println("Current run: " + a);
 			aLetter = Alphabet.findLetter(scale(numbers[a]));
