@@ -1,12 +1,13 @@
 package com.ethohampton.pi_decoder;
 
-public class Pi_Decoder {
+import com.ethohampton.pi_decoder.decoding.Decode_Pi;
 
+public class Pi_Decoder {
 
 	public long trysToFindPass;
 	public static String[] piInString;
 	public static int[] piNumbers;
-	
+	public static int runs = 50;
 
 	public static void main(String[] args) {
 
@@ -16,8 +17,7 @@ public class Pi_Decoder {
 			piNumbers[i] = Integer.parseInt(piInString[i]);
 
 		}
-
-
+		System.out.println(Decode_Pi.decode());
 
 	}
 }

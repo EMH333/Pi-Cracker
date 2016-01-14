@@ -30,7 +30,7 @@ public class Alphabet {
 	
 	public static String letter;
 
-	public static void findLetter(int num) {
+	public static String findLetter(int num) {
 		if (num == a) {
 			letter = "a";
 		} else if (num == b) {
@@ -83,9 +83,12 @@ public class Alphabet {
 			letter = "y";
 		} else if (num == z) {
 			letter = "z";
-		} else {
-			return;
+		}else{
+			letter = "-";
 		}
+			return letter;
+		
+		
 
 	}
 }
