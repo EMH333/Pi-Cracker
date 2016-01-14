@@ -2,8 +2,7 @@ package com.ethohampton.pi_decoder;
 
 public class Pi_Decoder {
 
-	public String passwordToFind = "sfjdkl";
-	public static String answer = "";
+
 	public long trysToFindPass;
 	public static String[] piInString;
 	public static int[] piNumbers;
@@ -18,18 +17,7 @@ public class Pi_Decoder {
 
 		}
 
-		for (int i = 0; i < 8/*piNumbers.length*/; i++) {
-			int v = piNumbers[i];
-			
-			while(v>24){//TODO implement a feature that evenly distributes values
-				v=v/2;
-			}
-			Alphabet.findLetter(v);
-			System.out.println(Alphabet.letter);
-				answer = answer + Alphabet.letter;
-			
-		}
-		System.out.println(answer);
+
 
 	}
 }
