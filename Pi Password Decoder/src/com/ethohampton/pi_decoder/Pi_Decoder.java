@@ -9,6 +9,8 @@ public class Pi_Decoder {
 
 	public static void main(String[] args) {
 
+		
+		
 		//piInString = Pi.Pi.split(",");// can use Pi or a set of randomly generated numbers
 		piInString = Pi.PiRandom.split(", ");
 		piNumbers = new int[piInString.length];

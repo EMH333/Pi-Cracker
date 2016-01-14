@@ -4,7 +4,7 @@ import com.ethohampton.pi_decoder.Alphabet;
 import com.ethohampton.pi_decoder.Pi_Decoder;
 
 public class Decode_Pi {
-	public static String passwordToFind = "sdkf";
+	public static String passwordToFind = "bbbb";
 	public static String answer = "";
 	public static int[] numbers = Pi_Decoder.piNumbers;
 	public static int runs;
