@@ -1,33 +1,33 @@
 package com.ethohampton.pi_decoder;
 
 public class Alphabet {
-	static int a = 1;
-	static int b = 2;
-	static int c = 3;
-	static int d = 4;
-	static int e = 5;
-	static int f = 6;
-	static int g = 7;
-	static int h = 8;
-	static int i = 9;
-	static int j = 10;
-	static int k = 11;
-	static int l = 12;
-	static int m = 13;
-	static int n = 14;
-	static int o = 15;
-	static int p = 16;
-	static int q = 17;
-	static int r = 18;
-	static int s = 19;
-	static int t = 20;
-	static int u = 21;
-	static int v = 22;
-	static int w = 23;
-	static int x = 24;
-	static int y = 25;
-	static int z = 26;
-	
+	final static int a = 1;
+	final static int b = 2;
+	final static int c = 3;
+	final static int d = 4;
+	final static int e = 5;
+	final static int f = 6;
+	final static int g = 7;
+	final static int h = 8;
+	final static int i = 9;
+	final static int j = 10;
+	final static int k = 11;
+	final static int l = 12;
+	final static int m = 13;
+	final static int n = 14;
+	final static int o = 15;
+	final static int p = 16;
+	final static int q = 17;
+	final static int r = 18;
+	final static int s = 19;
+	final static int t = 20;
+	final static int u = 21;
+	final static int v = 22;
+	final static int w = 23;
+	final static int x = 24;
+	final static int y = 25;
+	final static int z = 26;
+
 	public static String letter;
 
 	public static String findLetter(int num) {
@@ -83,12 +83,10 @@ public class Alphabet {
 			letter = "y";
 		} else if (num == z) {
 			letter = "z";
-		}else{
+		} else {
 			letter = "-";
 		}
-			return letter;
-		
-		
+		return letter;
 
 	}
 }

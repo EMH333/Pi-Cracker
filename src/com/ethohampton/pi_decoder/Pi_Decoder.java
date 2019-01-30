@@ -23,7 +23,7 @@ public class Pi_Decoder {
 		}
 		System.out.println(Decode_Pi.decode());*/
 
-		Decode_Pi.findHash("b",6);
+		Decode_Pi.findHash("bbbafd",6);
 		
 	}
 }
